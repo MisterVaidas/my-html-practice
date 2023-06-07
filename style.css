@@ -1,13 +1,15 @@
 h1 {
     color: blue;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
     text-transform: capitalize;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background: linear-gradient(45deg, #ff0000, #00ff00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: relative;
+    top: -20px;*/
     
 }
 
@@ -21,6 +23,8 @@ h1 {
     padding: 20px 20px;
     display: flex;
     justify-content: left;
+   /* position: absolute;
+    top: 10px;
     /*transition: opacity 0.3s ease;
     /*position: sticky;
     top: 0;
@@ -136,7 +140,17 @@ h1 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    left: 0;
+    animation: moveText 5s linear infinite;
+    color: cornflowerblue;
+  }
+
+  @keyframes moveText {
+    0% { left: 0; } /* Starting position */
+    50% { left: 230px; } /* End position */
+    100% { left: 0; } /* Ending position */
   }
 
   .aside-section {
