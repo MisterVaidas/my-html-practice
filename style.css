@@ -187,8 +187,21 @@ h1 {
     top: 10px;
     left: 10px;
     font-size: 20px;
-    color: #9bd89b;
-    font-family: cursive;
+    color: 	#7cfc00;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(red, green, blue, alpha);
+    animation: fadeInOut 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  .sharethis-inline-follow-buttons {
+    position: relative;
+    top: 20px;
   }
 
  
